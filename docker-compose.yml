@@ -1,0 +1,21 @@
+# -----------------------------------------------------------------------------
+#  A sample Docker Compose file to help you replicate our test environment
+# -----------------------------------------------------------------------------
+
+services:
+    zsad-service:
+        image: zsad-image:1
+        build:
+            context: .
+        container_name: zsad-container
+        volumes:
+            - ./shared_folder:/app/output
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: all
+                          capabilities: [gpu]
+
+        command: [ "python3", "runner.py" ]
