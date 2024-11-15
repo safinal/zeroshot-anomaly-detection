@@ -1,0 +1,49 @@
+{
+    "result": 62.969969526596316,
+    "metadata": [
+        {
+            "Category": "industrial_03",
+            "pixel_auroc": 95.37072811610537,
+            "pixel_f1": 24.633274657278502,
+            "pixel_ap": 15.176186435813774,
+            "pixel_aupro": 61.82079369199771,
+            "image_auroc": 80.375,
+            "image_f1": 79.81220657276995,
+            "image_ap": 88.75106533469221,
+            "leaderboard_score": 61.37401640525363
+        },
+        {
+            "Category": "industrial_02",
+            "pixel_auroc": 91.2241610807065,
+            "pixel_f1": 20.072870704639655,
+            "pixel_ap": 10.255858408598897,
+            "pixel_aupro": 60.8705183145742,
+            "image_auroc": 59.815384615384616,
+            "image_f1": 86.80555555555556,
+            "image_ap": 82.09849835286155,
+            "leaderboard_score": 56.36228040548106
+        },
+        {
+            "Category": "industrial_01",
+            "pixel_auroc": 90.75701047560689,
+            "pixel_f1": 34.53489702517163,
+            "pixel_ap": 29.950899232967497,
+            "pixel_aupro": 85.13760824485111,
+            "image_auroc": 81.06928532460446,
+            "image_f1": 91.89189189189189,
+            "image_ap": 96.10265294133642,
+            "leaderboard_score": 71.17361176905426
+        },
+        {
+            "Category": "mean",
+            "pixel_auroc": 92.45063322413958,
+            "pixel_f1": 26.4136807956966,
+            "pixel_ap": 18.460981359126723,
+            "pixel_aupro": 69.27630675047433,
+            "image_auroc": 73.75322331332968,
+            "image_f1": 86.16988467340579,
+            "image_ap": 88.98407220963006,
+            "leaderboard_score": 62.969969526596316
+        }
+    ]
+}
