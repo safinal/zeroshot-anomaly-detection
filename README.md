@@ -1,5 +1,4 @@
 # ⭐️ Zero-Shot Anomaly Detection Challenge
-*Contributors: [Ali Nafisi](https://safinal.github.io/)*
 
 [![pytorch](https://img.shields.io/badge/PyTorch-2.5.1-EE4C2C.svg?style=flat&logo=pytorch)](https://pytorch.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
