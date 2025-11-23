@@ -24,11 +24,11 @@ The zero-shot approach imposes significant constraints:
 
 ## 🏆 Results
 
-Our solution for this Challenge achieved outstanding results. The evaluation metric for this challenge is a weighted average of multiple metrics (image-level AUROC, AP, F1 and pixel-level AUROC, AUPRO, AP, F1), with submissions tested on a private test dataset. Our approach achieved the **highest score**.
+Our solution for this Challenge achieved outstanding results. The evaluation metric for this challenge is a weighted average of multiple metrics (image-level AUROC, AP, F1 and pixel-level AUROC, AUPRO, AP, F1), with submissions tested on a private test dataset. Our approach achieved the **second highest score**.
 
-The table below presents a summary of the Top 🔟 teams and their respective accuracy scores:
+The table below presents a summary of the Top 🔟 teams and their respective scores:
 
-| **Rank** | **Team**                             | **Accuracy (%)** |
+| **Rank** | **Team**                             | **Score (%)** |
 |----------|--------------------------------------|------------------|
 |🥇        | Pileh                                | 74.92            |
 |🥈        | **No Trust Issues Here (Our Team)**  | **73.14**        |
