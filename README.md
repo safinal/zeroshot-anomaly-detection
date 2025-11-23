@@ -30,13 +30,17 @@ The table below presents a summary of the Top 🔟 teams and their respective ac
 
 | **Rank** | **Team**                             | **Accuracy (%)** |
 |----------|--------------------------------------|------------------|
-|🥇        | **No Trust Issues Here (Our Team)**  | **73.16**        |
-|🥈        | AIUoK                                | 73.04            |
-|🥉        | Tempest                              | 71.61            |
-| 4        | Sum of Squared Errors                | 71.55            |
-| 5        | Scientific                           | 71.54            |
-| 6        | AI Guardians of Trust                | 66.47            |
-| 7        | red_serotonin                        | 65.92            |
+|🥇        | Pileh                                | 74.92            |
+|🥈        | **No Trust Issues Here (Our Team)**  | **73.14**        |
+|🥉        | AIUoK                                | 72.98            |
+| 4        | Tempest                              | 70.88            |
+| 5        | AI Guardians of Trust                | 66.29            |
+| 6        | red_serotonin                        | 63.51            |
+| 7        | CortexAI                             | 62.35            |
+| 8        | GGWP                                 | 62.25            |
+| 9        | AlphaQ                               | 62.15            |
+| 10       | Persistence                          | 61.62            |
+
 
 
 ## 🏃🏻‍♂️‍➡️ Steps to Set Up and Run
