@@ -12,15 +12,26 @@ The challenge focuses on zero-shot unsupervised anomaly detection, requiring mod
 
 
 ## ⚙️ Constraints
-The zero-shot approach imposes significant constraints:
-- Models must not be trained on any samples from the test-time distribution (neither normal nor anomalous)
-- Models can either be completely training-free or trained only on a specified auxiliary dataset
-- Solutions must generalize well across diverse dataset classes (8 industrial and 2 medical classes)
-- Each class within the dataset is treated independently
-- Performance is evaluated using multiple metrics at both image-level (AUROC, AP, F1) and pixel-level (AUROC, AUPRO, AP, F1)
+* **Zero-Shot Learning Protocol:** The model must strictly adhere to a zero-shot setting, meaning it cannot observe any data—neither normal nor anomalous samples—from the test time distribution during its training phase.
+* **Allowed Training Data:** The model can either be completely training-free or utilize a training phase restricted solely to a specific auxiliary dataset. The only permitted auxiliary dataset for this purpose is the entire MVTec-AD dataset.
+* **Class Independence:** The problem is structured as a one-class classification (OCC) or one-model-per-category task. Each class within the dataset is treated independently, meaning there is no need to develop a unified model that functions across all classes simultaneously.
+* **Execution Environment:** All code is executed within an isolated Docker container that does not have internet access. Consequently, any backbones or pre-trained models must be included in the repository and loaded offline.
+* **Hardware and Time Limits:** The submission will be evaluated on a single NVIDIA GeForce RTX 4090 GPU. The total execution time for the inference phase, including evaluation, must not exceed 3 hours.
+* **Output Specifications:** All generated anomaly scores (both image-level and pixel-level) must be normalized to a value between 0 and 1. Additionally, pixel-level anomaly score outputs must have a resolution of $224 \times 224$.
 
 ## 🚀 Our Approach
-[must_completed]
+To address the zero-shot anomaly detection challenge, we adopted the **MuSc (Mutual Scoring)** framework, which achieves state-of-the-art results by leveraging the observation that normal image patches recur across test samples, whereas anomalous patches are rare. Our solution enhances this framework through specific architectural choices, hyperparameter optimization, and a novel post-processing strategy.
+
+### Core Methodology
+Our pipeline consists of three primary components derived from the MuSc framework:
+* **Local Neighborhood Aggregation with Multiple Degrees (LNAMD):** Aggregates patch features at different neighborhood sizes to capture anomalies at multiple scales.
+* **Mutual Scoring Mechanism (MSM):** Assigns patch-level anomaly scores by measuring how frequently a patch finds similar counterparts within the test set.
+* **Re-scoring with Constrained Image-level Neighborhood (RsCIN):** Refines image-level anomaly scores by constructing a constrained neighborhood graph to enforce consistency among images with similar global features.
+
+### Key Implementations & Refinements
+* **Backbone Architecture:** We utilized a combined model design, employing **DINOv2** (`dinov2-vitl14`) for segmentation tasks and **ViT** (`ViT-L-14-336`) for classification tasks.
+* **Hyperparameter Optimization:** We performed a systematic search over hyperparameters, selecting feature layers `{5, 11, 17, 23}` and specific score configurations that consistently improved performance on both image-level and pixel-level metrics.
+* **Post-Processing with Binary Masking:** We identified that the baseline method struggled with background noise (e.g., grass or soil around photovoltaic modules) due to inconsistent textures. To resolve this, we introduced a classical computer vision filter to generate a binary mask that defines a narrow margin around the main object. Pixels outside this mask are set to the minimum anomaly value, significantly improving localization stability.
 
 ## 🏆 Results
 
