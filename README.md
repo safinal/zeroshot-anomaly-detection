@@ -52,6 +52,8 @@ The table below presents a summary of the Top 🔟 teams and their respective sc
 | 9        | AlphaQ                               | 62.15            |
 | 10       | Persistence                          | 61.62            |
 
+## 📄 Technical Report
+For a detailed explanation of our methodologies, experiments, and results, please refer to our full [Technical Report](https://github.com/safinal/rayan-ai-contest-solutions/blob/main/Technical_Report.pdf).
 
 
 ## 🏃🏻‍♂️‍➡️ Steps to Set Up and Run
