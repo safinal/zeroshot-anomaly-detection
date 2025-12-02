@@ -53,7 +53,7 @@ The table below presents a summary of the Top 🔟 teams and their respective sc
 | 10       | RANA                                 | 61.60            |
 
 ## 📄 Technical Report
-For a detailed explanation of our methodologies, experiments, and results, please refer to our full [Technical Report](https://github.com/safinal/rayan-ai-contest-solutions/blob/main/Technical_Report.pdf).
+For a detailed explanation of our methodologies, experiments, and results, please refer to our full [Technical Report](https://arxiv.org/abs/2512.01498).
 
 
 ## 🏃🏻‍♂️‍➡️ Steps to Set Up and Run
