@@ -35,22 +35,23 @@ Our pipeline consists of three primary components derived from the MuSc framewor
 
 ## 🏆 Results
 
-Our solution for this Challenge achieved outstanding results. The evaluation metric for this challenge is a weighted average of multiple metrics (image-level AUROC, AP, F1 and pixel-level AUROC, AUPRO, AP, F1), with submissions tested on a private test dataset. Our approach achieved the **highest score**.
+Our solution for this Challenge achieved outstanding results. The evaluation metric for this challenge is a weighted average of multiple metrics (image-level AUROC, AP, F1 and pixel-level AUROC, AUPRO, AP, F1), with submissions tested on a private test dataset. Our approach achieved the **second highest score**.
 
 The table below presents a summary of the Top 🔟 teams and their respective scores:
 
 | **Rank** | **Team**                             | **Score (%)** |
 |----------|--------------------------------------|------------------|
-|🥇        | **No Trust Issues Here (Our Team)**  | **73.14**        |
-|🥈        | AIUoK                                | 72.98            |
-|🥉        | Tempest                              | 70.88            |
-| 4        | AI Guardians of Trust                | 66.29            |
-| 5        | red_serotonin                        | 63.51            |
-| 6        | CortexAI                             | 62.35            |
-| 7        | GGWP                                 | 62.25            |
-| 8        | AlphaQ                               | 62.15            |
-| 9        | Persistence                          | 61.62            |
-| 10       | RANA                                 | 61.60            |
+|🥇        | Pileh                                | 74.92            |
+|🥈        | **No Trust Issues Here (Our Team)**  | **73.14**        |
+|🥉        | AIUoK                                | 72.98            |
+| 4        | Tempest                              | 70.88            |
+| 5        | AI Guardians of Trust                | 66.29            |
+| 6        | red_serotonin                        | 63.51            |
+| 7        | CortexAI                             | 62.35            |
+| 8        | GGWP                                 | 62.25            |
+| 9        | AlphaQ                               | 62.15            |
+| 10       | Persistence                          | 61.62            |
+
 
 ## 📄 Technical Report
 For a detailed explanation of our methodologies, experiments, and results, please refer to our full [Technical Report](https://arxiv.org/abs/2512.01498).
